@@ -15,9 +15,9 @@ The deepdmr model in dDMR/ was built from here: https://github.com/abenton/deep-
 +  anndic.txt stores POI feature vector data.
   
   >For the region *r1*, the number of POIs in each POI category can be counted. The frequency density *di* of the *i-th* POI category in region *r1* is calculated by:
-  >
-  >![poi_vec](poi_vec.png)
-  >
+  >$$
+  >d_{i}=\frac{Number\, of\, POIs\, of\, the\, ith\, POI\: category }{Area\, of\, regions\, r_{i}}
+  >$$
   >and the POI feature vector in region *r1* is composed of [*d1,d2,...,dc,1*], where *c* is the number
   >of POI categories and the last ’1’ is the default feature value, which is used to represent
   >the average value of each topic.
